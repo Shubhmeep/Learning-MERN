@@ -1,0 +1,15 @@
+{
+  "name": "calc_to_learn_expressjs",
+  "version": "1.0.0",
+  "description": "basic calc to learn express js",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "shubh sehgal",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.0"
+  }
+}
