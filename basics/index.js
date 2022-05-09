@@ -4,20 +4,28 @@ const path = require('path');
 const fs = require('fs')
 
 
-fs.mkdir(path.join(__dirname,'/test'),(err)=>{
+//make a directory
+
+// fs.mkdir(path.join(__dirname,'/test'),(err)=>{
     
-    if(err){
+//     if(err){
 
-    console.log(err);
-    return
+//     console.log(err);
+//     return
 
-    }
+//     }
 
-    console.log('done👍')
+//     console.log('done👍')
     
-})
+// })
 
 
 
-x('shubh');
-x('zayn')
+// x('shubh');    calling the module locally
+// x('zayn')
+
+
+
+
+// creating a file
+
