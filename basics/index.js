@@ -4,7 +4,7 @@ const path = require('path');
 const fs = require('fs')
 
 
-//make a directory
+// make a directory
 
 // fs.mkdir(path.join(__dirname,'/test'),(err)=>{
     
@@ -48,7 +48,7 @@ const fs = require('fs')
 
 //     }
 
-//     console.log(data)    BUFFER = // this will not give us data in the file in utf-8 format
+//     console.log(data)   // BUFFER = // this will not give us data in the file in utf-8 format
 
 // })
 
@@ -67,39 +67,39 @@ const fs = require('fs')
 
 
 
-//let's create a node server
+// //let's create a node server
 
-const http = require('http');
-const app = http.createServer((req,res) => {
-    console.log(req.url);
+// const http = require('http');
+// const app = http.createServer((req,res) => {
+//     console.log(req.url);
 
-    if(req.url === '/'){
-        fs.readFile(path.join(__dirname,'index.html'),(err,content)=>{
-            if(err){
-                throw err;
+//     if(req.url === '/'){
+//         fs.readFile(path.join(__dirname,'index.html'),(err,content)=>{
+//             if(err){
+//                 throw err;
     
-            }
+//             }
     
-            res.end(content)
-        });
-    }else if(req.url === '/about'){
-        fs.readFile(path.join(__dirname,'about.html'),(err,content)=>{
+//             res.end(content)
+//         });
+//     }else if(req.url === '/about'){
+//         fs.readFile(path.join(__dirname,'about.html'),(err,content)=>{
 
-            if(err){
-                throw err;
+//             if(err){
+//                 throw err;
 
-            }
+//             }
 
-            res.end(content)
+//             res.end(content)
 
-        })
+//         })
        
-    }
+//     }
   
-})
-app.listen(3000,()=>{
-    console.log("server running on 3000 port")
-})
+// })
+// app.listen(3000,()=>{
+//     console.log("server running on 3000 port")
+// })
 
 
 
